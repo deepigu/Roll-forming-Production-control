@@ -29,8 +29,8 @@ app.add_middleware(
         "http://127.0.0.1:5173",
         "http://localhost:5174",
         "http://127.0.0.1:5174"
-        "https://roll-forming-production-control.netlify.app",
     ],
+    allow_origin_regex=r"https://roll-forming-production-control\.netlify\.app",
     allow_credentials=True,
     allow_methods=["GET", "POST", "PUT", "OPTIONS"],
     allow_headers=["*"]
